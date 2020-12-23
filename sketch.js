@@ -18,8 +18,8 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-    Dustbin1 = new Dustbin(293,123,50,50);
-
+    dustbin = new Dustbin(293,123,50,50);
+    paper = new Paper(100,100,5);
 
 
 
@@ -35,7 +35,9 @@ function draw() {
   
   drawSprites();
  
-  Dustbin1.display();
+  dustbin.display();
+  paper.display();
+}
 
 function keyPressed() {
  if (keyCode === UP_ARROW)
@@ -49,7 +51,6 @@ function keyPressed() {
 
 
 
-}
 
 
 
